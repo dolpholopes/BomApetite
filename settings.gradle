@@ -1,0 +1,2 @@
+rootProject.name='Bom Apetite'
+include ':app'
