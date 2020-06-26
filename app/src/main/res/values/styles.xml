@@ -8,8 +8,5 @@
         <item name="colorAccent">@color/colorBlack</item>
     </style>
 
-    <style name="botaoPadrao" parent="Theme.AppCompat.Light">
-        <item  name="colorControlHighlight"></item>
-    </style>
 
 </resources>

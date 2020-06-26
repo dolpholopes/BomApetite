@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "349744545103",
+    "firebase_url": "https://bom-apetite-ffa30.firebaseio.com",
+    "project_id": "bom-apetite-ffa30",
+    "storage_bucket": "bom-apetite-ffa30.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349744545103:android:8cba847cd8ccabdbce593a",
+        "android_client_info": {
+          "package_name": "com.example.bomapetite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "349744545103-ril7mr5vtb338jvbfgjumq5gvfv08618.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bomapetite",
+            "certificate_hash": "f77530c22298090ac3525e2fba012c018f2e9dde"
+          }
+        },
+        {
+          "client_id": "349744545103-n1n1027th9sp3ca1ikft7rrhrdi9sqbp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAb6x4upgShWxC7OpmvDropbGS48u1BcYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "349744545103-n1n1027th9sp3ca1ikft7rrhrdi9sqbp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
