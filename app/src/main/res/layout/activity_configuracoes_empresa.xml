@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".activity.ConfiguracoesEmpresaActivity">
+
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginTop="50dp"
+            android:id="@+id/imagePerfilEmpresa"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/capa_perfil"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:padding="16dp"
+            android:background="@drawable/bg_edit_text"
+            android:id="@+id/editEmpresaNome"
+            android:hint="Nome Empresa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_marginTop="-2dp"
+            android:padding="16dp"
+            android:background="@drawable/bg_edit_text"
+            android:id="@+id/editEmpresaCategoria"
+            android:hint="Categoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:padding="16dp"
+            android:background="@drawable/bg_edit_text"
+            android:id="@+id/editEmpresaTempo"
+            android:hint="Tempo de entrega"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_marginTop="-2dp"
+            android:padding="16dp"
+            android:background="@drawable/bg_edit_text"
+            android:id="@+id/editEmpresaValorEntrega"
+            android:hint="Valor de entrega"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:onClick="validarDadosEmpresa"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorDark"
+            android:padding="16dp"
+            android:text="Salvar"
+            android:id="@+id/buttonEmpresaSalvar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

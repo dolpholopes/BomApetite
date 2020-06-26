@@ -5,13 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.EmpresaActivity">
+    tools:context=".activity.NovoProdutoEmpresaActivity">
 
 
-
-    <androidx.recyclerview.widget.RecyclerView
-       android:id="@+id/recyclerProdutos"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
 
 </LinearLayout>

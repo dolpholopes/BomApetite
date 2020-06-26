@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Bom Apetite</string>
+    <string name="novo_produto">Novo Produto</string>
+    <string name="sair">Sair</string>
 </resources>
