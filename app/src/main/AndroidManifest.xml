@@ -11,9 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.CardapioActivity"
+            android:parentActivityName=".activity.HomeActivity"></activity>
         <activity
             android:name=".activity.ConfiguracoesUsuarioActivity"
-            android:parentActivityName=".activity.HomeActivity"/>
+            android:parentActivityName=".activity.HomeActivity" />
         <activity
             android:name=".activity.NovoProdutoEmpresaActivity"
             android:parentActivityName=".activity.EmpresaActivity" />

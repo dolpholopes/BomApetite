@@ -37,8 +37,8 @@ public class AdapterEmpresa extends RecyclerView.Adapter<AdapterEmpresa.MyViewHo
     public void onBindViewHolder(@NonNull MyViewHolder holder, int i) {
         Empresa empresa = empresas.get(i);
         holder.nomeEmpresa.setText(empresa.getNome());
-        holder.categoria.setText(empresa.getCategoria() + " - ");
-        holder.tempo.setText(empresa.getTempo() + " Min");
+        holder.categoria.setText(empresa.getCategoria() + "  | ");
+        holder.tempo.setText(empresa.getTempo() + " Min  | ");
         holder.entrega.setText("R$ " + empresa.getPrecoEntrega().toString());
 
         //Carregar imagem
