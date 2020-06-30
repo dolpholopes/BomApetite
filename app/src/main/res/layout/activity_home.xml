@@ -7,14 +7,23 @@
     android:orientation="vertical"
     tools:context=".activity.HomeActivity">
 
+
+
     <com.miguelcatalan.materialsearchview.MaterialSearchView
         android:id="@+id/material"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:layout_weight="1"
         android:id="@+id/recyclerEmpresas"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+    <TextView
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:text="Obs: Não se esqueça de configurar seus dados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
