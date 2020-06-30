@@ -23,20 +23,51 @@ public class Pedido {
     }
 
     public Pedido(String idUsu, String idEmp) {
-        setIdUsuario(idUsu);
-        setIdEmpresa(idEmp);
+
+        setIdUsuario( idUsu );
+        setIdEmpresa( idEmp );
+
         DatabaseReference firebaseRef = ConfiguracaoFirebase.getFirebase();
-        DatabaseReference pedidoRef = firebaseRef.child("pedidos_usuario").child(idEmp).child(idUsu);
-        setIdPedido(pedidoRef
-        .push().getKey());
+        DatabaseReference pedidoRef = firebaseRef
+                .child("pedidos_usuario")
+                .child( idEmp )
+                .child( idUsu );
+        setIdPedido( pedidoRef.push().getKey() );
+
     }
 
     public void salvar(){
+
         DatabaseReference firebaseRef = ConfiguracaoFirebase.getFirebase();
-        DatabaseReference pedidoRef = firebaseRef.child("pedidos_usuario").child(getIdEmpresa()).child(getIdUsuario());
-        pedidoRef.setValue(this);
+        DatabaseReference pedidoRef = firebaseRef
+                .child("pedidos_usuario")
+                .child( getIdEmpresa() )
+                .child( getIdUsuario() );
+        pedidoRef.setValue( this );
+
     }
 
+    public void remover(){
+
+        DatabaseReference firebaseRef = ConfiguracaoFirebase.getFirebase();
+        DatabaseReference pedidoRef = firebaseRef
+                .child("pedidos_usuario")
+                .child( getIdEmpresa() )
+                .child( getIdUsuario() );
+        pedidoRef.removeValue();
+
+    }
+
+    public void confirmar(){
+
+        DatabaseReference firebaseRef = ConfiguracaoFirebase.getFirebase();
+        DatabaseReference pedidoRef = firebaseRef
+                .child("pedidos")
+                .child( getIdEmpresa() )
+                .child( getIdPedido() );
+        pedidoRef.setValue( this );
+
+    }
 
     public String getIdUsuario() {
         return idUsuario;
