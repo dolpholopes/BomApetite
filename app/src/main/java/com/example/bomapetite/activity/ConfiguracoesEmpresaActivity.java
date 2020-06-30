@@ -97,6 +97,7 @@ public class ConfiguracoesEmpresaActivity extends AppCompatActivity {
 
     public void validarDadosEmpresa(View view){
         String nome = editEmpresaNome.getText().toString();
+        String nome_filtro = editEmpresaNome.getText().toString();
         String taxa = editEmpresaTaxa.getText().toString();
         String tempo = editEmpresaTempo.getText().toString();
         String categoria = editEmpresaCategoria.getText().toString();
@@ -108,6 +109,7 @@ public class ConfiguracoesEmpresaActivity extends AppCompatActivity {
                         Empresa empresa = new Empresa();
                         empresa.setIdUsuario(idUsuarioLogado);
                         empresa.setNome(nome);
+                        empresa.setNome_filtro(nome_filtro);
                         empresa.setPrecoEntrega(Double.parseDouble(taxa));
                         empresa.setCategoria(categoria);
                         empresa.setTempo(tempo);

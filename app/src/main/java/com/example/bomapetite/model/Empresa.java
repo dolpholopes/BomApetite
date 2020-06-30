@@ -8,6 +8,7 @@ public class Empresa {
     private String idUsuario;
     private String urlImagem;
     private String nome;
+    private String nome_filtro;
     private String tempo;
     private String categoria;
     private Double precoEntrega;
@@ -43,6 +44,14 @@ public class Empresa {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getNome_filtro() {
+        return nome_filtro;
+    }
+
+    public void setNome_filtro(String nome_filtro) {
+        this.nome_filtro = nome_filtro.toLowerCase();
     }
 
     public String getTempo() {

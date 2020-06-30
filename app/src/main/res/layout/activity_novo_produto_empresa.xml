@@ -8,5 +8,49 @@
     tools:context=".activity.NovoProdutoEmpresaActivity">
 
 
+    <LinearLayout
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:inputType="text"
+            android:padding="16dp"
+            android:background="@drawable/bg_edit_text"
+            android:id="@+id/editProdutoNome"
+            android:hint="Nome do produto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:inputType="text"
+            android:layout_marginTop="-2dp"
+            android:padding="16dp"
+            android:background="@drawable/bg_edit_text"
+            android:id="@+id/editProdutoDescricao"
+            android:hint="Descrição"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:inputType="numberDecimal"
+            android:layout_marginTop="-2dp"
+            android:padding="16dp"
+            android:background="@drawable/bg_edit_text"
+            android:id="@+id/editProdutoPreco"
+            android:hint="Preço do produto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:onClick="validarDadosProduto"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorDark"
+            android:padding="16dp"
+            android:text="Salvar"
+            android:id="@+id/buttonProdutoSalvar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
 
 </LinearLayout>

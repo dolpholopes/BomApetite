@@ -77,6 +77,7 @@ public class AutenticacaoActivity extends AppCompatActivity {
                                         String tipoUsuario = getTipoUsuario();
                                         UsuarioFirebase.atualizarTipoUsuario(tipoUsuario);
                                         abrirTelaPrincipal(tipoUsuario);
+                                        limparCampos();
                                     }else{
                                         String erroExcecao = "";
                                         try {
@@ -109,6 +110,7 @@ public class AutenticacaoActivity extends AppCompatActivity {
                                         Toast.makeText(AutenticacaoActivity.this, "Logado com sucesso! " +task.getException() , Toast.LENGTH_SHORT).show();
                                         String tipoUsuario = task.getResult().getUser().getDisplayName();
                                         abrirTelaPrincipal(tipoUsuario);
+                                        limparCampos();
                                     }else{
                                         Toast.makeText(AutenticacaoActivity.this, "Erro ao fazer o login: " +task.getException() , Toast.LENGTH_SHORT).show();
                                     }
@@ -156,6 +158,12 @@ public class AutenticacaoActivity extends AppCompatActivity {
         switchAcesso = findViewById(R.id.switchAcesso);
         switchUsuario = findViewById(R.id.switchTipoUsuario);
         linearTipoUsuario = findViewById(R.id.linearTipoUsuario);
+    }
+
+    private void limparCampos(){
+        editEmail.setText("");
+        editSenha.setText("");
+        switchAcesso.setChecked(false);
     }
 
 }

@@ -15,11 +15,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <ImageView
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="20dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:src="@drawable/logo_bom_apetite" />
+            android:src="@drawable/burger" />
     </LinearLayout>
 
     <LinearLayout
