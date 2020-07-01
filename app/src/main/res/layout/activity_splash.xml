@@ -10,7 +10,7 @@
     <ImageView
         android:padding="16dp"
         android:background="@color/colorPrimaryDark"
-        android:src="@drawable/burger"
+        android:src="@drawable/logo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
