@@ -125,6 +125,9 @@ public class EmpresaActivity extends AppCompatActivity {
            case R.id.menuNovo:
                abrirNovoProduto();
                break;
+           case R.id.menuPedidos:
+               abrirPedidos();
+               break;
        }
         return super.onOptionsItemSelected(item);
     }
@@ -136,6 +139,10 @@ public class EmpresaActivity extends AppCompatActivity {
         }catch (Exception e){
             e.printStackTrace();
         }
+    }
+
+    private void abrirPedidos(){
+        startActivity(new Intent(EmpresaActivity.this, PedidosActivity.class));
     }
 
     private void abrirConfiguracoes(){

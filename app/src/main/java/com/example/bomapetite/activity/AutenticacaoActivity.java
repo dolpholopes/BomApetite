@@ -148,6 +148,7 @@ public class AutenticacaoActivity extends AppCompatActivity {
             startActivity(new Intent(getApplicationContext(), EmpresaActivity.class));
         }else{//Usuario
             startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+            Toast.makeText(this, "Não se esqueça de inserir seus dados pessoais nas configurações", Toast.LENGTH_LONG).show();
         }
     }
 

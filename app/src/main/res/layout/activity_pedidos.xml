@@ -5,17 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.HomeActivity">
-
-
-
-    <com.miguelcatalan.materialsearchview.MaterialSearchView
-        android:id="@+id/material"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+    tools:context=".activity.PedidosActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerEmpresas"
+        android:id="@+id/recyclerPedidos"
+        android:padding="16dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
