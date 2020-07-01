@@ -50,7 +50,7 @@ public class AutenticacaoActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked){//empresa
-                    linearTipoUsuario.setVisibility(View.GONE); //Caso queira que qualquer um possa cadastrar empresa, alterar de GONE para VISIBLE
+                    linearTipoUsuario.setVisibility(View.GONE);//Caso queira que qualquer um possa cadastrar empresa, alterar de GONE para VISIBLE
                 }else{//Usuario
                     linearTipoUsuario.setVisibility(View.GONE);
                 }

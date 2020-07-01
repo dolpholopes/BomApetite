@@ -53,5 +53,8 @@ dependencies {
     //SpotsDialog
     implementation 'com.github.d-max:spots-dialog:1.1@aar'
 
+    //Mascara de telefone
+    implementation 'com.github.rtoshiro.mflibrary:mflibrary:1.0.0'
+
 
 }
