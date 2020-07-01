@@ -8,8 +8,9 @@
         app:showAsAction="always"/>
     <item
         android:id="@+id/menuConfiguracoes"
-        android:title="Configurações"
-        app:showAsAction="never"/>
+        android:title="Perfil"
+        android:icon="@drawable/ic_perfil"
+        app:showAsAction="always"/>
     <item
         android:id="@+id/menuSair"
         android:title="Sair"

@@ -8,6 +8,8 @@ public class Usuario {
     private String idUsuario;
     private String nome;
     private String endereco;
+    private String telefone;
+    private String urlImagem;
 
     public Usuario() {
     }
@@ -40,5 +42,21 @@ public class Usuario {
 
     public void setEndereco(String endereco) {
         this.endereco = endereco;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public String getUrlImagem() {
+        return urlImagem;
+    }
+
+    public void setUrlImagem(String urlImagem) {
+        this.urlImagem = urlImagem;
     }
 }
