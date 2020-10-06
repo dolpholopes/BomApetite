@@ -8,11 +8,10 @@
     tools:context=".activity.HomeActivity">
 
 
-
     <com.miguelcatalan.materialsearchview.MaterialSearchView
         android:id="@+id/material"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerEmpresas"

@@ -43,7 +43,7 @@ public class CardapioActivity extends AppCompatActivity {
 
     private RecyclerView recyclerProdutosCardapio;
     private ImageView imageEmpresaCardapio;
-    private TextView textNomeEmpresaCardapio;
+    private TextView textNomeEmpresaCardapio, textIrCarrinho;
     private Empresa empresaSelecionada;
     private AlertDialog dialog;
     private TextView textCarrinhoQtd, textCarrinhoTotal;
@@ -349,10 +349,16 @@ public class CardapioActivity extends AppCompatActivity {
         recyclerProdutosCardapio = findViewById(R.id.recyclerProdutosCardapio);
         imageEmpresaCardapio = findViewById(R.id.imageEmpresaCardapio);
         textNomeEmpresaCardapio = findViewById(R.id.textNomeEmpresaCardapio);
+        textIrCarrinho = findViewById(R.id.textIrCarrinho);
 
         textCarrinhoQtd = findViewById(R.id.textCarrinhoQtd);
         textCarrinhoTotal = findViewById(R.id.textCarrinhoTotal);
 
     }
 
+
+    public void irCarrinho(View view) {
+        Intent i = new Intent(CardapioActivity.this, CarrinhoActivity.class);
+        startActivity(i);
+    }
 }

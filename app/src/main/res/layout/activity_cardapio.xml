@@ -47,11 +47,14 @@
             android:layout_height="wrap_content">
 
             <TextView
+                android:id="@+id/textIrCarrinho"
                 android:padding="8dp"
                 android:textColor="@color/colorWhite"
                 android:text="Ver Carrinho"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="irCarrinho"/>
             <TextView
                 android:id="@+id/textCarrinhoQtd"
                 android:padding="8dp"
